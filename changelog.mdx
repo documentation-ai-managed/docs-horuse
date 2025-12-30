@@ -1,0 +1,121 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Horuse.
+---
+
+## Recent Updates
+
+Stay informed about all changes to Horuse. You receive new features, bug fixes, and performance improvements with each release. Check the tags on each update to understand the impact.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation workspaces
+- Introduced custom themes with your brand color support, like `#3B82F6`
+- New search indexing for faster page lookups across projects
+
+## Improvements
+
+- Enhanced editor performance by `>30%` for large documents
+- Better mobile responsiveness in the documentation viewer
+
+## Bug Fixes
+
+- Fixed rendering issues with nested JSX components
+- Resolved sync errors during offline editing
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated version history with diff viewer
+- Added webhook support for custom integrations at `https://your-webhook-url.com/webhook`
+
+## Bug Fixes
+
+- Corrected frontmatter parsing for YAML with special characters like `{` and `}`
+- Fixed H2 heading hierarchy enforcement in MDX validator
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core MDX documentation engine with component support
+- Built-in preview server and export to static sites
+- Authentication via API key at `https://api.example.com`
+
+## Breaking Changes
+
+- Updated component syntax to require double quotes for attributes
+
+</Update>
+
+## Upcoming Roadmap
+
+Horuse continues to evolve based on your feedback. Explore planned features in this visual overview.
+
+<Columns cols={3}>
+  <Card title="AI Assistance" icon="zap" href="#">
+    Auto-generate documentation from code comments using AI.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="#">
+    Track document views and engagement metrics.
+  </Card>
+  <Card title="Multi-Language Docs" icon="globe" href="#">
+    Full i18n support for global teams.
+  </Card>
+</Columns>
+
+## How to Update
+
+Update Horuse to the latest version in minutes. Follow these steps for a smooth upgrade.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Run the version check command.
+    
+````bash
+npm list horuse
+````
+  </Step>
+  <Step title="Install Latest" icon="download">
+    Use your package manager.
+    
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install horuse@latest
+````
+````bash
+yarn add horuse@latest
+````
+    </CodeGroup>
+  </Step>
+  <Step title="Restart Server" icon="refresh-cw">
+    Restart your development server to apply changes.
+    
+````bash
+npm run dev
+````
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Always back up your `docs/` folder before updating. Review migration notes below for version-specific changes.
+</Callout>
+
+## Migration Notes
+
+For major releases, you might need minor adjustments.
+
+<Expandable title="v1.2.0 Migration" default-open="true">
+  Update any `{variable}` references to use backticks in prose: `Use `{API_KEY}` for auth`. No other changes required.
+</Expandable>
+
+<Expandable title="v1.1.0 Migration">
+  Replace single quotes in JSX attributes with double quotes: `title="Text"` instead of `title='Text'`.
+</Expandable>

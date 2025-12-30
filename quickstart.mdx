@@ -1,0 +1,134 @@
+---
+title: Getting Started with Horuse
+description: Set up your Horuse account and create your first documentation space in minutes.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+<Callout kind="info">
+
+- A modern web browser (Chrome, Firefox, or Safari)
+- An email address for account verification
+- Optional: Existing documentation in Markdown, GitHub repo, or Google Docs
+
+</Callout>
+
+## Create Your Horuse Account
+
+Sign up and log in to get started.
+
+<Steps>
+  <Step title="Visit Horuse" icon="globe">
+    Navigate to [https://horuse.com](https://horuse.com) and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, create a password, and complete the verification.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the login page and authenticate with your credentials.
+  </Step>
+</Steps>
+
+## Set Up Your First Documentation Space
+
+Create a project space to organize your docs.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Space** and name it (e.g., "My Project Docs").
+  </Step>
+  <Step title="Configure Basics" icon="settings">
+    Set visibility (public/private) and add a description.
+  </Step>
+  <Step title="Save Space" icon="save">
+    Click **Create** to generate your space with a default page.
+  </Step>
+</Steps>
+
+## Import Existing Documentation
+
+Bring in your current docs seamlessly.
+
+<Tabs>
+  <Tab title="GitHub Repo" icon="github">
+    <Steps>
+      <Step title="Connect GitHub">
+        In your space settings, select **Import from GitHub** and authorize the app.
+      </Step>
+      <Step title="Select Repo">
+        Choose your repo (e.g., `your-username/project-docs`) and branch (e.g., `main`).
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Markdown Files" icon="file-text">
+    Upload ZIP files or paste Markdown content directly.
+
+````markdown
+# Welcome to My Docs
+
+This is imported Markdown.
+
+## Features
+
+- Easy editing
+- Live preview
+````
+  </Tab>
+  <Tab title="Google Docs" icon="file">
+    Export as Markdown from Google Docs, then use the Markdown tab.
+  </Tab>
+</Tabs>
+
+## Basic Editing and Publishing Workflow
+
+Edit pages using the visual editor or Markdown.
+
+<CodeGroup tabs="Visual Editor,Markdown">
+  ```html
+  <!-- Visual Editor Mode -->
+  <h1>Edit in WYSIWYG</h1>
+  <p>Bold text, add images, and format lists visually.</p>
+  ```
+  ```markdown
+  # Markdown Mode
+
+  Use standard Markdown syntax:
+
+  - **Bold** and *italic*
+  - `Inline code`
+  - Lists and tables
+  ```
+</CodeGroup>
+
+<Steps>
+  <Step title="Edit Page" icon="edit-3">
+    Open a page, make changes, and preview live.
+  </Step>
+  <Step title="Publish" icon="upload">
+    Click **Publish** to make changes live instantly.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Save frequently and use version history (under **Revisions**) to revert changes.
+
+</Callout>
+
+## Next Steps
+
+Explore more features.
+
+<Columns cols={3}>
+  <Card title="Advanced Editing" icon="edit-3" href="/docs/advanced-editing">
+    Learn custom themes and components.
+  </Card>
+  <Card title="Collaboration" icon="users" href="/docs/collaboration">
+    Invite team members and manage permissions.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/docs/integrations">
+    Connect with GitHub, Slack, and more.
+  </Card>
+</Columns>

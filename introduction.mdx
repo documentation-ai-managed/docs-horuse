@@ -1,0 +1,95 @@
+---
+title: Introduction to Horuse
+description: Discover Horuse, a powerful documentation platform for organizing and managing your project documentation efficiently.
+---
+
+## Overview
+
+Horuse provides a centralized space to organize, manage, and collaborate on your project documentation. You create structured docs, embed code snippets, and share knowledge with your team effortlessly. Whether you document APIs, user guides, or internal wikis, Horuse scales with your needs.
+
+This platform supports real-time editing, version history, and search across all your content. Start by creating a workspace, then add pages, sections, and embeds to build comprehensive documentation.
+
+<Callout kind="info">
+  New to Horuse? Follow the quick start guide to set up your first workspace in under 5 minutes.
+</Callout>
+
+## Key Benefits
+
+Horuse delivers value for teams and solo developers alike. Here are the core advantages:
+
+<Columns cols={3}>
+  <Card title="Centralized Organization" icon="folder" href="#organization">
+    Keep all docs in one place with hierarchical folders and search.
+  </Card>
+  <Card title="Team Collaboration" icon="users" href="#collaboration">
+    Edit in real-time, assign reviewers, and track changes.
+  </Card>
+  <Card title="Rich Media Support" icon="image" href="#media">
+    Embed diagrams, videos, and interactive code examples.
+  </Card>
+</Columns>
+
+These features reduce documentation silos and accelerate onboarding.
+
+## Navigation and Interface Tour
+
+Horuse features an intuitive interface. Follow these steps to explore:
+
+<Steps>
+  <Step title="Access Dashboard" icon="monitor">
+    Log in at `https://dashboard.horuse.com`. You see your workspaces on the left sidebar.
+  </Step>
+  <Step title="Create Workspace" icon="plus">
+    Click <kbd>New Workspace</kbd>. Name it and select a template.
+  </Step>
+  <Step title="Add Pages" icon="file-plus">
+    Inside a workspace, use the <kbd>+ Page</kbd> button. Organize with drag-and-drop.
+  </Step>
+  <Step title="Customize Theme" icon="palette">
+    Go to Settings > Theme. Apply your brand color like `#3B82F6`.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Teams" icon="users">
+    Use the Members tab to invite collaborators and set permissions.
+  </Tab>
+  <Tab title="Solo" icon="user">
+    Focus on the Editor view for quick page creation without distractions.
+  </Tab>
+</Tabs>
+
+## Quick Links
+
+Jumpstart your Horuse experience:
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="rocket" href="/quickstart">
+    Set up your first project in minutes.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your workspace with API keys.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Tailor themes and layouts.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    Stay updated with new features.
+  </Card>
+</Columns>
+
+<Expandable title="Advanced Tips" default-open="false">
+  Integrate Horuse with GitHub using webhooks at `https://api.horuse.com/webhooks/github`.
+
+  ```javascript
+  // Example webhook handler
+  app.post('/webhook', (req, res) => {
+    if (req.body.ref === 'refs/heads/main') {
+      updateDocs(req.body);
+    }
+    res.status(200).send('OK');
+  });
+  ```
+</Expandable>
+
+Ready to build? Head to the [Quickstart](/quickstart) next.
